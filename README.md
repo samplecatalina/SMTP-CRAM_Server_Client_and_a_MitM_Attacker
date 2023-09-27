@@ -2,6 +2,9 @@
  Python, Telnet, Netcat, SMTP-CRAM, Socket
 
 ## Digest
+
+An email exchange applications that supports the SMTP-CRAM protocol in python. This includes a client, a server and an eavesdropper (middle-man attacker), which can apply MitM attack to the authentication mechanism. To demonstrate CRAM-MD5 indeed has its weakness, the eavesdropper is implemented such that a MitM attack can be performed.
+
 -Implemented a client, a server, and a Man-in-the-Middle (MitM) which could handle multi-process messages.
 
 -Deployed Simple Mail Transfer Protocol(SMTP) for all communications among the client/server/eavesdropper.
@@ -12,7 +15,7 @@
 
 -Tested in Linux and Windows environment with Telnet and Netcat.
 
-An email exchange applications that supports the SMTP-CRAM protocol in python. This includes a client, a server and an eavesdropper (middle-man attacker), which can apply MitM attack to the authentication mechanism. To demonstrate CRAM-MD5 indeed has its weakness, the eavesdropper is implemented such that a MitM attack can be performed.
+
 
 ## Summary
 
