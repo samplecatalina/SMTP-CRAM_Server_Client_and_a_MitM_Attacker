@@ -3,17 +3,9 @@
 
 Completed in Nov. 2022
 
-## Features
-
-- SMTP-CRAM Server and Client: Implements the SMTP protocol with CRAM to securely authenticate users and transfer emails.
-- MitM Attacker: Simulates a Man-in-the-Middle attacker capable of eavesdropping and potentially altering communications between the server and client.
-- Multiprocessing: Efficiently handles multiple processes to manage concurrent connections and ensure smooth and responsive interactions.
-- Robust Error Handling: Implements comprehensive error handling to manage unexpected situations and maintain stability.
-- Modular Design: The codebase is organized into modular components, promoting maintainability, scalability, and readability.
-
 ## Digest
 
-An email exchange application that supports the SMTP-CRAM protocol in Python. This includes a client, a server, and an eavesdropper (middle-man attacker), which can apply MitM attack to the authentication mechanism. To demonstrate CRAM-MD5 indeed has its weakness, the eavesdropper is implemented such that a MitM attack can be performed.
+This project is an implementation of an SMTP-CRAM (Simple Mail Transfer Protocol - Challenge Response Authentication Mechanism) Server and Client, along with a Man-in-the-Middle (MitM) Attacker. It demonstrates an understanding of network protocols, security mechanisms, and advanced Python programming, showcasing the ability to develop, analyze, and secure network communications.
 
 - Implemented a client, a server, and a Man-in-the-Middle (MitM) which could handle multi-process messages.
 
@@ -25,10 +17,29 @@ An email exchange application that supports the SMTP-CRAM protocol in Python. Th
 
 - Tested in Linux and Windows environments with Telnet and Netcat.
 
+## Features
 
+- SMTP-CRAM Server and Client: Implements the SMTP protocol with CRAM to securely authenticate users and transfer emails.
+- MitM Attacker: Simulates a Man-in-the-Middle attacker capable of eavesdropping and potentially altering communications between the server and client.
+- Multiprocessing: Efficiently handles multiple processes to manage concurrent connections and ensure smooth and responsive interactions.
+- Robust Error Handling: Implements comprehensive error handling to manage unexpected situations and maintain stability.
+- Modular Design: The codebase is organized into modular components, promoting maintainability, scalability, and readability.
+
+## Technical Stack
+- Programming Language: Python
+- Networking: Socket Programming
+- Security: CRAM (Challenge Response Authentication Mechanism)
+- Concurrency: Multiprocessing
+
+## Code Structure
+- server.py: Implements the SMTP-CRAM server logic.
+- client.py: Implements the SMTP-CRAM client logic.
+- eavesdropper.py: Implements the MitM attacker logic.
+- multiprocess_server.py: Manages multiprocessing for handling concurrent connections.
+- ServerResponse.py: Defines server responses.
+- utils.py: Contains utility functions and helpers.
 
 ## Overview
-This project is an implementation of an SMTP-CRAM (Simple Mail Transfer Protocol - Challenge Response Authentication Mechanism) Server and Client, along with a Man-in-the-Middle (MitM) Attacker. It demonstrates an understanding of network protocols, security mechanisms, and advanced Python programming, showcasing the ability to develop, analyze, and secure network communications.
 
 On the high level, the program has the following functionalities:
 
